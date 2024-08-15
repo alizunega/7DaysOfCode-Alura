@@ -5,7 +5,7 @@
     src="./assets/logosevendays.png"
     alt="Logo 7 Days Of Code"
     caption="#7DaysOfCode"
-    width="200">
+    width="400">
 </kbd>
 
 ## Descripción
