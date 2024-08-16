@@ -47,7 +47,7 @@ if (COMPARAR numeroDiez y stringDiez) {
 }
 ```
 
-### Día 2:
+### Día 2: Lógica JS 2/7: Variables :memo:
 
 ```
 Debe pedir al usuario responder 3 preguntas:
