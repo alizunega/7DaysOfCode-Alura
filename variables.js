@@ -36,11 +36,20 @@ let gusta = prompt(
 
 // 1 > ¡Muy bien! Sigue estudiando y tendrás mucho éxito.
 // 2 > Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?
+let msj;
 
 if (gusta === "1") {
-  alert("¡Muy bien! Sigue estudiando y tendrás mucho éxito.");
+  msj = "¡Muy bien! Sigue estudiando y tendrás mucho éxito.";
 } else if (gusta === "2") {
-  alert("Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?");
+  msj = "Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?";
 } else {
-  alert("Ha ingresado una opción no válida");
+  msj = "Ha ingresado una opción no válida";
 }
+
+alert(msj); // Muestra el mensaje correspondiente
+
+let mensaje1 = document.getElementById("mensaje1");
+let mensaje2 = document.getElementById("mensaje2");
+
+mensaje1.innerHTML = `Hola ${nombre}, tienes ${edad} años y ya estás aprendiendo ${lenguaje}!`;
+mensaje2.innerHTML = msj;
