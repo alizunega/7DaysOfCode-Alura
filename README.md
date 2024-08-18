@@ -74,7 +74,7 @@ Y luego, dependiendo de la respuesta, debería mostrar uno de los siguientes men
 
 ```
 
-### Día 3: Lógica JS 3/7: Estructuras de control de flujo
+### Día 3: Lógica JS 3/7: Estructuras de control de flujo :memo:
 
 ```
 Tu desafío de hoy es crear los destinos posibles de un juego, en el que el usuario pueda elegir:
