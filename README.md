@@ -74,7 +74,30 @@ Y luego, dependiendo de la respuesta, debería mostrar uno de los siguientes men
 
 ```
 
-### Día 3:
+### Día 3: Lógica JS 3/7: Estructuras de control de flujo
+
+```
+Tu desafío de hoy es crear los destinos posibles de un juego, en el que el usuario pueda elegir:
+Si quiere seguir hacia el área de Front-End o seguir hacia el área de Back-End.
+
+1- Si está en el área de Front-End, si quiere aprender React o aprender Vue.
+2- Si está en el área de Back-End, podrá aprender C# o aprender Java.
+
+3- Después, independientemente de las elecciones anteriores, el usuario podrá elegir entre seguir especializándose
+en el área elegida o desarrollarse para convertirse en Fullstack.
+Debes mostrar en pantalla un mensaje específico para cada elección.
+
+4- Finalmente, pregunta en qué tecnologías le gustaría a la persona especializarse o conocer.
+Aquí, la persona puede responder N tecnologías, una a la vez. Entonces, mientras continúe respondiendo **ok** a la pregunta:
+"¿Hay alguna otra tecnología que te gustaría aprender?", sigue presentando el Prompt,
+para que complete el nombre de la tecnología en cuestión. Y, justo después,
+presenta un mensaje comentando algo sobre la tecnología ingresada.
+
+Lo importante es que la persona que esté jugando siempre pueda elegir qué decisión tomar para aprender
+ y desarrollarse en el área de programación.
+
+Además, también es esencial que, al final del juego, pueda ingresar tantas tecnologías como desee en la lista de aprendizaje.
+```
 
 ### Día 4:
 
