@@ -1,30 +1,32 @@
 // Tu desafío de hoy es crear los destinos posibles de un juego, en el que el usuario pueda elegir:
 // Si quiere seguir hacia el área de Front-End o seguir hacia el área de Back-End.
-alert("Deberá elegir un camino de especialización");
-let eleccionUsuario = prompt("Elija entre FrontEnd o BackEnd: ");
-eleccion = eleccionUsuario.toLowerCase();
+alert();
+const eleccionUsuario = prompt(
+  "Deberá elegir un camino de especialización. Elija entre FrontEnd o BackEnd: "
+);
+const eleccion = eleccionUsuario.toLowerCase();
 let frontend, backend;
 
 if (eleccion == "frontend") {
   // Si está en el área de Front-End, si quiere aprender React o aprender Vue.
   alert("Bienvenido a FrontEnd");
-  frontend = prompt("¿Prefiere aprender React o Vue?: ");
-  alert(`Elegiste ${frontend.toUpperCase()}`);
+  frontend = prompt("¿Prefiere aprender React o Vue?: ")?.toUpperCase();
+  alert(`Elegiste ${frontend}`);
 } else if (eleccion == "backend") {
   // Si está en el área de Back-End, podrá aprender C# o aprender Java.
   alert("Bienvenido a BackEnd");
-  backend = prompt("¿Prefiere aprender C# o Java?: ");
-  alert(`Elegiste ${backend.toUpperCase()}`);
+  backend = prompt("¿Prefiere aprender C# o Java?: ")?.toUpperCase();
+  alert(`Elegiste ${backend}`);
 } else {
   alert("Por favor, elija entre FrontEnd o BackEnd");
 }
 
 // Después, independientemente de las elecciones anteriores, el usuario podrá elegir entre seguir especializándose
 // en el área elegida o desarrollarse para convertirse en Fullstack.
-alert(
-  "¿Desea seguir especializándose en el área elegida o convertirse en FullStack?"
+
+let especializacion = prompt(
+  "¿Desea seguir especializándose en el área elegida (continuar) o convertirse en FullStack?"
 );
-let especializacion = prompt("Elija entre continuar o fullstack...");
 // Debes mostrar en pantalla un mensaje específico para cada elección.
 if (especializacion == "continuar") {
   alert(`¡Continuemos el camino de ${eleccionUsuario.toUpperCase()}!`);
@@ -42,7 +44,7 @@ const tecnologias = [];
 // presenta un mensaje comentando algo sobre la tecnología ingresada.
 while (confirm("¿Hay alguna otra tecnología que te gustaría aprender?")) {
   let tecnologia = prompt("¿Cuál?");
-  alert(`Has elegido ${tecnologia}`);
+  alert(`Has elegido ${tecnologia.toUpperCase()}`);
   tecnologias.push(tecnologia.toUpperCase());
 }
 

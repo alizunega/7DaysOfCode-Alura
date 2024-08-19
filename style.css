@@ -1,9 +1,10 @@
 body {
-    background-color: rgba(181, 141, 218, 0.837);
+    background-color: rgba(158, 185, 239, 0.837);
 }
 
 .container-mensaje {
-    background-color: antiquewhite;
+    background-color: #cfe1f6;
+    width: 80%;
 }
 
 .container-lenguajes {
@@ -17,4 +18,8 @@ ul {
 li {
     display: flex;
     justify-content: space-between;
+}
+
+h4 {
+    color: black;
 }

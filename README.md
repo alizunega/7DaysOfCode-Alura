@@ -99,9 +99,55 @@ Lo importante es que la persona que esté jugando siempre pueda elegir qué deci
 Además, también es esencial que, al final del juego, pueda ingresar tantas tecnologías como desee en la lista de aprendizaje.
 ```
 
-### Día 4:
+### Día 4: Lógica JS 4/7: Mas loops y randomización :memo:
 
-### Día 5:
+```
+Debes crear un pequeño programa que comience con un valor específico predefinido
+entre 0 y 10 para el número que vas a adivinar (por ejemplo, el 7).
+ 
+A continuación, el programa te preguntará cuál es el valor que deseas adivinar y, si aciertas, te felicitará.
+Si te equivocas, te dará 2 intentos más.
+ 
+Al final, si no aciertas en ninguno de los intentos, imprimirá cuál era el número inicial.
+ 
+Después de que el programa esté funcionando, intenta usar un número aleatorio en lugar de uno predefinido.
+
+Para hacer que la propia máquina elija el número a adivinar, puedes utilizar algo llamado Math.random().
+ 
+Para ello, utiliza el siguiente código:
+ 
+Math.floor(Math.random() * (máximo - mínimo + 1) + mínimo)
+```
+
+### Día 5: Lógica JS 5/7: Arrays y colecciones :memo:
+
+```
+Hoy debes crear un programa en Javascript que pregunte si deseas agregar un alimento a tu lista de compras,
+y debes poder responder con "sí" o "no".
+
+A continuación, preguntará qué alimento deseas agregar, y escribirás su nombre, como por ejemplo "zanahoria".
+
+Después, deberá preguntar en qué categoría se encaja ese alimento, con algunas opciones ya predefinidas, como frutas, lácteos, congelados, dulces y lo que más creas interesante. Así podrás separar todo en su respectivo grupo.
+
+Por último, en caso de que ya no quieras agregar nada más a la lista de compras y respondas "no" a la primera pregunta, se mostrará una lista con todos los ítems agrupados, de la siguiente manera:
+
+Si añades a tu lista:
+
+banana, leche en polvo, tomate, leche vegetal, chicle, gominola, manzana, uva, aguacate y leche de vaca.
+
+El programa debería imprimir, por ejemplo:
+
+Lista de compras:
+
+Frutas: banana, tomate, manzana, uva, aguacate
+
+Lácteos: leche vegetal, leche de vaca, leche en polvo
+
+Congelados:
+
+Dulces: chicle y gominola
+
+```
 
 ### Día 6:
 
