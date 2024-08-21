@@ -149,6 +149,32 @@ Dulces: chicle y gominola
 
 ```
 
-### Día 6:
+### Día 6: Lógica JS 6/7: Remoción de arrays :memo:
 
-### Día 7:
+```
+Deberás crear la opción de eliminar algún elemento de la lista, que se mostrará junto con la pregunta: “¿deseas añadir un alimento a la lista de compras?”.
+
+A partir de ahí, si la persona elige esa opción, el programa imprimirá los elementos presentes en la lista actual, y la persona deberá escribir cuál de ellos desea eliminar.
+
+Después de eso, el programa eliminará el elemento de la lista e imprimirá la confirmación de que el elemento realmente ya no está allí.
+
+Finalmente, el programa volverá al ciclo inicial de preguntas.
+
+Si, al intentar eliminar el elemento, este no se encuentra en la lista, deberás mostrar un mensaje advirtiendo de ello.
+Por ejemplo: “¡No fue posible encontrar el elemento en la lista!”.
+Recuerda que la opción de eliminar un elemento solo deberá estar disponible a partir del momento en que exista al menos un elemento en la lista de compras.
+```
+
+### Día 7: Lógica JS 7/7: Funciones en javascript :memo:
+
+```
+En este último desafío, mi propuesta para ti es: crea tu propia calculadora,
+pero con un detalle muy importante: cada operación debe ser una función diferente en tu código.
+
+Primero, la persona debe elegir una opción de operación impresa por el programa en la pantalla.
+
+Luego, debe ingresar los dos valores que desea utilizar, y el programa imprimirá el resultado de la operación en cuestión.
+
+Las opciones disponibles deben ser: suma, resta, multiplicación, división, y salir.
+En esta última, el programa debe detenerse y mostrar un mensaje "Hasta la próxima".
+```
