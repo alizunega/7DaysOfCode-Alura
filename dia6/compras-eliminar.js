@@ -27,6 +27,7 @@ function eliminarAlimento() {
   while (eliminar !== "si") {
     if (eliminar === "no") {
       alert("¡No se eliminaron elementos!");
+      mostrarLista();
       return;
     } else {
       alert("Seleccione una opcion válida (si o no).");
@@ -54,13 +55,16 @@ function eliminarAlimento() {
         );
       }
     } else {
+      //el elemento no pertenece a la lista
       alert("¡No fue posible encontrar el elemento en la lista!");
+      mostrarLista();
+      return;
     }
     eliminar = prompt("¿Desea eliminar algún alimento? Responda 'si' o 'no'");
 
     if (eliminar === "no") {
       alert("¡No se eliminarán más elementos!");
-      console.log(listaEliminados);
+      console.log("Lista de eliminados", listaEliminados);
       mostrarLista();
       return;
     }

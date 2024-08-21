@@ -32,25 +32,35 @@ function imprimir(resultado) {
   const container = document.querySelector(".container");
   const resultadoContainer = document.createElement("div");
   const tituloOp = document.createElement("h4");
-  if (operacion != "salir") {
+  if (operacion !== "salir") {
     tituloOp.textContent = `Operación seleccionada: ${operacion}`;
+    const elementoValores = document.createElement("h5");
+    elementoValores.textContent = `Los valores ingresados son ${valor1} y ${valor2}`;
+    resultadoContainer.appendChild(elementoValores);
+
+    const elementoResultado = document.createElement("h6");
+    elementoResultado.textContent = `El resultado para la operación seleccionada es: ${resultado}`;
+    resultadoContainer.appendChild(elementoResultado);
   } else {
-    tituloOp.textContent = "Hasta la próxima";
+    tituloOp.textContent = "Hoy no haremos cuentas... Hasta la próxima!";
   }
-  const result = document.createElement("h6");
-  result.textContent = `El resultado para la operacion seleccionada es: ${resultado}`;
+
+  resultadoContainer.insertBefore(tituloOp, resultadoContainer.firstChild);
+
+  container.appendChild(resultadoContainer);
 }
 
-let operacion = prompt(
-  "Seleccione la operación que desea realizar: suma - resta - multiplicacion - division"
+//inicio//
+const operacion = prompt(
+  "Seleccione la operación que desea realizar: suma - resta - multiplicacion - division. O escriba 'salir' para salir de la calculadora."
 );
-let valor1,
-  valor2 = 0;
+let valor1, valor2;
 
-while (operacion != "salir") {
+if (operacion !== "salir") {
   let resultado = 0;
   valor1 = parseInt(prompt("Elija un valor para el primer operador"));
   valor2 = parseInt(prompt("Elija un valor para el segundo operador"));
+
   switch (operacion) {
     case "suma":
       resultado = suma(valor1, valor2);
@@ -65,5 +75,11 @@ while (operacion != "salir") {
       resultado = division(valor1, valor2);
       break;
   }
+  alert(`El resultado es: ${resultado}`);
   imprimir(resultado);
+} else if (operacion === "salir") {
+  alert("¡Hasta la próxima!");
+  imprimir(0);
+} else {
+  alert("No ha seleccionado una operación correctamente");
 }
